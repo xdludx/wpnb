@@ -4,7 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "webpack ./webpack/webpack.prod.js",
+    "build:dev": "webpack --config ./webpack/webpack.dev.js",
+    "build": "webpack --config ./webpack/webpack.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,7 +21,8 @@
   "homepage": "https://github.com/xdludx/wpnb#readme",
   "devDependencies": {
     "webpack": "^4.46.0",
-    "webpack-cli": "^4.6.0"
+    "webpack-cli": "^4.6.0",
+    "webpack-merge": "^5.7.3"
   },
   "dependencies": {
     "lodash": "^4.17.21",
